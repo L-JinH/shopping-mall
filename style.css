@@ -1,0 +1,174 @@
+/* 순서 참고 
+1. display
+2. list-style
+3. position
+4. float
+5. clear
+6. width / height
+7. padding / margin
+8. border / background
+9. color / font
+10. text-decoration
+11. text-align / vertical-align
+12. white-space
+13. other text
+14. content
+*/
+
+/* reset */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* layout */
+#wrap {
+  width: 75rem;
+  margin: 0 auto;
+}
+
+/* layout - header */
+
+.header {
+  height: 6.25rem;
+  background-color: #d9e5ff;
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* layout - header : rogo */
+
+.rogo {
+  height: inherit;
+  width: 12.5rem;
+  background-color: black;
+  text-align: center;
+  float: left;
+}
+
+.rogo span {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 6.25rem;
+  color: white;
+}
+
+/* layout - header : nav */
+.nav {
+  width: 37.5rem;
+  height: 3rem;
+  background-color: #b5b2ff;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.main_menu {
+  width: 100%;
+  height: 100%;
+}
+
+.main_menu > li {
+  text-align: center;
+  position: relative;
+  float: left;
+  width: 25%;
+  height: 100%;
+  display: block;
+}
+
+.main_menu > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 3rem;
+  font-weight: bold;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.main_menu > li > a:hover {
+  background-color: cadetblue;
+  color: cornsilk;
+}
+
+.sub_menu {
+  /* display: none; */
+  position: absolute;
+}
+
+.sub_menu li a {
+  color: black;
+}
+
+/* layout - main */
+/* layout - main : slide */
+.slide {
+  height: 18.75rem;
+  background-color: #b2ccff;
+}
+
+/* layout - main : contents */
+.contents {
+  height: 12.5rem;
+  background-color: #6799ff;
+}
+
+.contents::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.contents article {
+  width: 33.3%;
+  height: inherit;
+  float: right;
+}
+
+article:first-child,
+article:last-child {
+  background-color: #6b66ff;
+}
+
+/* layout - footer */
+.footer {
+  height: 6.25rem;
+  background-color: #4374d9;
+}
+
+.footer::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.footer_rogo {
+  height: inherit;
+  width: 12.5rem;
+  background-color: #4641d9;
+  float: left;
+}
+
+.footer_sns {
+  height: inherit;
+  width: 12.5rem;
+  background-color: #4641d9;
+  float: right;
+}
