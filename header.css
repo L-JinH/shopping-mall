@@ -1,0 +1,92 @@
+.header {
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.header_rogo {
+  float: left;
+  /* rogo 글씨 */
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+  background-color: black;
+  color: white;
+}
+
+.header_nav {
+  width: 50%;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  /* bottom으로 했더니 메뉴가 위로 솟구침. */
+  /* float: right; */
+  background-color: beige;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.header_nav-mainmenu {
+  text-align: center;
+}
+
+.header_nav-mainmenu::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.header_nav-mainmenu > li {
+  float: left;
+  line-height: 50px;
+  position: relative;
+  /* style */
+  font-weight: bold;
+}
+
+.header_nav-mainmenu > li:hover {
+  background-color: cadetblue;
+}
+
+.header_nav-mainmenu > li > a {
+  display: block;
+  width: 70px;
+  padding: 0 40px;
+  /* style */
+  color: black;
+}
+
+.header_nav-mainmenu > li:hover > a {
+  color: beige;
+}
+
+.header_nav-submenu {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+}
+
+.header_nav-submenu > li {
+  white-space: nowrap;
+}
+
+.header_nav-submenu > li:hover {
+  background-color: tomato;
+}
+
+.header_nav-submenu > li > a {
+  display: block;
+  width: 70px;
+  padding: 0 40px;
+  color: black;
+}
+
+.header_nav-submenu > li:hover > a {
+  color: beige;
+}

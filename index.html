@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
     <title>JUST 쇼핑몰</title>
   </head>
   <body>
     <div id="wrap">
-      <header class="header clearfix">
-        <div class="rogo"><span>JUST</span></div>
-        <nav class="nav">
-          <ul class="main_menu">
+      <header class="header">
+        <div class="header_rogo">JUST Shopping</div>
+        <nav class="header_nav">
+          <ul class="header_nav-mainmenu">
             <li>
               <a href="#">탑</a>
-              <ul class="sub_menu">
+              <ul class="header_nav-submenu">
                 <li><a href="#">블라우스</a></li>
                 <li><a href="#">티</a></li>
                 <li><a href="#">셔츠</a></li>
@@ -24,7 +25,7 @@
             </li>
             <li>
               <a href="#">아우터</a>
-              <ul class="sub_menu">
+              <ul class="header_nav-submenu">
                 <li><a href="#">자켓</a></li>
                 <li><a href="#">코트</a></li>
                 <li><a href="#">가디건</a></li>
@@ -33,7 +34,7 @@
             </li>
             <li>
               <a href="#">팬츠</a>
-              <ul class="sub_menu">
+              <ul class="header_nav-submenu">
                 <li><a href="#">청바지</a></li>
                 <li><a href="#">짧은바지</a></li>
                 <li><a href="#">긴바지</a></li>
@@ -42,7 +43,7 @@
             </li>
             <li>
               <a href="#">악세사리</a>
-              <ul class="sub_menu">
+              <ul class="header_nav-submenu">
                 <li><a href="#">귀고리</a></li>
                 <li><a href="#">목걸이</a></li>
                 <li><a href="#">반지</a></li>
@@ -52,16 +53,25 @@
           </ul>
         </nav>
       </header>
-      <main id="main">
-        <section class="slide"></section>
-        <section class="contents">
-          <article></article>
-          <article></article>
-          <article></article>
+      <main class="main">
+        <div class="main_slide">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Necessitatibus officia minus pariatur soluta illum consectetur
+            tenetur tempora laborum velit repellat nemo reprehenderit, quaerat
+            quibusdam eligendi voluptatem mollitia? Quisquam, incidunt
+            provident.
+          </p>
+        </div>
+        <section class="main_contents">
+          <article class="main_contents-taps"></article>
+          <article class="main_contents-banner"></article>
+          <article class="main_contents-shortcut"></article>
         </section>
       </main>
       <footer class="footer">
         <div class="footer_rogo"></div>
+        <div class="footer_copyright"></div>
         <div class="footer_sns"></div>
       </footer>
     </div>
